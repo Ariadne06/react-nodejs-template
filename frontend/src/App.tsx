@@ -5,10 +5,9 @@ function App() {
   const [serverStatus, setServerStatus] = useState('Checking...')
 
   useEffect(() => {
-    // Check if backend is running
     fetch('/api')
       .then(res => res.json())
-      .then(data => {
+      .then((data: { message?: string }) => {
         setServerStatus(data.message || 'Connected')
       })
       .catch(() => {

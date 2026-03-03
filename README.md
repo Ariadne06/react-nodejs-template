@@ -20,17 +20,17 @@ react_nodejs_template/
 │   ├── .env
 │   └── package.json
 │
-├── frontend/         # React + Vite application
+├── frontend/         # React + TypeScript + Vite application
 │   ├── public/       # Static assets
 │   ├── src/
 │   │   ├── assets/   # Images, fonts, etc.
 │   │   ├── config/   # Configuration
 │   │   ├── layouts/  # Layout components
 │   │   ├── pages/    # Page components
-│   │   ├── App.jsx
-│   │   └── main.jsx
+│   │   ├── App.tsx
+│   │   └── main.tsx
 │   ├── index.html
-│   ├── vite.config.js
+│   ├── vite.config.ts
 │   └── package.json
 │
 ├── .gitignore
@@ -114,18 +114,27 @@ See [API.md](API.md) for detailed API documentation.
 
 ### Backend
 
-- Node.js
+- Node.js (ES Modules)
 - Express.js
+- PostgreSQL (pg)
+- JWT Authentication
+- bcryptjs
+- Helmet (security)
 - CORS
-- dotenv
 - Morgan (logging)
+- express-validator
+- Rate limiting
 
 ### Frontend
 
-- React 18
+- React 18.3
+- TypeScript
 - Vite
+- Tailwind CSS v4
+- shadcn/ui (configured)
 - React Router DOM
 - Axios
+- Lucide Icons
 - ESLint
 
 ## License
