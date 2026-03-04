@@ -92,6 +92,45 @@ npm run dev
 
 The frontend will run on http://localhost:5173
 
+## Git Workflow
+
+### Clone and Create Your Own Branch
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd react_nodejs_template
+```
+
+2. Create and switch to a new branch:
+
+```bash
+git checkout -b your_branch_name
+```
+
+3. Make your changes and commit:
+
+```bash
+git add .
+git commit -m "your commit message"
+```
+
+4. Push your branch to remote:
+
+```bash
+git push origin your_branch_name
+```
+
+5. Create a pull request on GitHub/GitLab
+
+### Branch Naming Convention
+
+- `feature/` - New features
+- `fix/` - Bug fixes
+- `refactor/` - Code refactoring
+- `docs/` - Documentation updates
+
 ## Development
 
 ### Backend
